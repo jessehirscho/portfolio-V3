@@ -1,8 +1,8 @@
 // import type React from "react"
-import React, { useState } from "react";
+import type { ReactNode } from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import "./globals.css"
+import "./global.css"
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
   return (
     <html lang="en">
